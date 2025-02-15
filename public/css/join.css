@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.join {
+  margin-bottom: 20px;
+}
+
+.join div {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.join input[type="email"],
+.join input[type="text"],
+.join input[type="password"],
+.join select,
+.join input[type="radio"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.join input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.join input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.join .id_check {
+  font-size: 12px;
+  color: #007bff;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.id_check:hover {
+  text-decoration: underline;
+}
+
+.join #id_Message,
+.join #pass_Message {
+  font-size: 12px;
+  color: red;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* 전화번호 입력란 스타일 */
+.join.phone_input {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.join.phone_input div {
+  font-size: 14px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.input0 {
+  width: 20%; /* 각 입력칸 크기를 줄여서 한 줄에 나열 */
+}
+
+.input0:focus {
+  outline-color: #007bff;
+}
+
+.join.birth_input {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.join.birth_input div {
+  font-size: 14px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.join.birth_input select {
+  width: 80px;
+  padding: 8px;
+  font-size: 14px;
+}

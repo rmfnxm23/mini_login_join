@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/idFind.css" />
+  </head>
+  <body>
+    <form action="/idFind" method="post">
+      <div>
+        <h2 class="idFind">아이디 찾기</h2>
+        <div>휴대폰 번호</div>
+        <input
+          type="number"
+          name="phone1"
+          placeholder="000"
+          class="input0"
+          maxLength="3"
+          required
+        />
+        -
+        <input
+          type="number"
+          name="phone2"
+          placeholder="0000"
+          class="input0"
+          maxLength="4"
+          required
+        />
+        -
+        <input
+          type="number"
+          name="phone3"
+          placeholder="0000"
+          class="input0"
+          maxLength="4"
+          required
+        />
+      </div>
+      <button type="submit" id="submitBtn">확인</button>
+      <div id="show_id"></div>
+    </form>
+  </body>
+  <script src="/js/idFind.js"></script>
+</html>

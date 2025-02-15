@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>로그인</h2>
+      <form action="/loginsuccess" method="post">
+        <div class="login">
+          <div>ID</div>
+          <input
+            type="email"
+            placeholder="이메일을 입력해주세요"
+            name="id"
+            id="input_Id"
+            required
+          />
+          <div id="id_Message"></div>
+        </div>
+        <div class="login">
+          <div>비밀번호</div>
+          <input
+            type="password"
+            placeholder="비밀번호를 입력해주세요"
+            name="pass"
+            id="input_Pass"
+            required
+          />
+          <div id="pass_Message"></div>
+        </div>
+
+        <div type="button" id="login_btn">로그인</div>
+        <div>
+          <!-- a태그로 (render) -->
+
+          <a href="http://localhost:3000/idFind"
+            ><div type="button" id="find_id_btn">아이디 찾기</div></a
+          >
+
+          <a href="http://localhost:3000/passFind"
+            ><div type="button" id="find_password_btn">비밀번호 찾기</div></a
+          >
+          <a href="http://localhost:3000/join">
+            <div type="button" id="join_btn">회원가입</div></a
+          >
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="/js/login.js"></script>
+</html>

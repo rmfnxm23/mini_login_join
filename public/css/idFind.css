@@ -1,0 +1,84 @@
+/* 전체 페이지 스타일 */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* 폼 컨테이너 스타일 */
+form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  align-items: center; /* 중앙 정렬 */
+}
+
+/* 제목 스타일 */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* 각 입력 필드 스타일 */
+.input0 {
+  width: 30%; /* 필드 너비를 3등분 */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* 입력 필드 포커스 시 스타일 */
+.input0:focus {
+  border-color: #5b9bd5;
+  outline: none;
+}
+
+/* 버튼 스타일 */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* 위쪽 간격 */
+}
+
+/* 버튼 호버 스타일 */
+button:hover {
+  background-color: #45a049;
+}
+
+/* 아이디 출력 영역 스타일 */
+#show_id {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px; /* 아래쪽 간격 */
+}
+
+/* 오류 메시지 스타일 */
+.error {
+  color: red;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
