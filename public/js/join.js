@@ -9,8 +9,12 @@ function id_check() {
   const same_data = base_data.filter((item) => item.id === input_Id);
   console.log(input_Id, "1111111");
   console.log(same_data, "222222");
-  if (same_data.length > 0) {
-    // 중복된 ID가 있다면
+  if (!input_Id) {
+    // input_Id가 빈값일 경우 처리
+    id_Message.innerText = "ID를 입력해주세요.";
+    document.getElementById("submitBtn").disabled = true; // 로그인 버튼 비활성화
+  } else if (same_data.length > 0) {
+    // 중복된 ID가 있을 경우
     id_Message.innerText = "이미 존재하는 ID입니다.";
     document.getElementById("submitBtn").disabled = true; // 로그인 버튼 비활성화
   } else {
@@ -58,6 +62,36 @@ fetch("/userinfo")
           pass_Message.innerText = "비밀번호가 일치하지 않습니다.";
           return;
         }
+
+        // // 정규식 정의
+        // const phone1Regex = /^010$/; // 첫 번째 입력은 "010"만 허용
+        // const phone2Regex = /^[0-9]{4}$/; // 두 번째 입력은 4자리 숫자
+        // const phone3Regex = /^[0-9]{4}$/; // 세 번째 입력은 4자리 숫자
+
+        // let isValid = true;
+
+        // // 첫 번째 필드 검사
+        // if (!phone1Regex.test(phone1)) {
+        //   alert("첫 번째 필드는 '010'만 입력 가능합니다.");
+        //   isValid = false;
+        // }
+
+        // // 두 번째 필드 검사
+        // if (!phone2Regex.test(phone2)) {
+        //   alert("두 번째 필드는 4자리 숫자만 입력 가능합니다.");
+        //   isValid = false;
+        // }
+
+        // // 세 번째 필드 검사
+        // if (!phone3Regex.test(phone3)) {
+        //   alert("세 번째 필드는 4자리 숫자만 입력 가능합니다.");
+        //   isValid = false;
+        // }
+
+        // // 유효성 검사 실패 시 폼 제출 막기
+        // if (!isValid) {
+        //   event.preventDefault();
+        // }
 
         // 로컬스토리지에서 기존 데이터 가져오기
         let base_data = JSON.parse(localStorage.getItem("data")) || [];

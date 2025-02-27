@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    .login_message {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    span {
+      color: blue;
+    }
+  </style>
   <body>
-    <h3>로그인 성공!</h3>
-    <div><%= name %>님 환영합니다!</div>
+    <div class="login_message">
+      <h3>로그인 성공!</h3>
+      <h1>
+        <span><%= name %></span>
+        님 환영합니다!
+      </h1>
+    </div>
   </body>
 </html>

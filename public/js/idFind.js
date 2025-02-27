@@ -21,8 +21,10 @@ document.getElementById("submitBtn").addEventListener("click", function (e) {
   if (user) {
     // 사용자 아이디를 찾았다면 출력
     document.getElementById("show_id").innerText = `아이디: ${user.id}`;
+    document.getElementById("show_id").style.color = "#808080";
   } else {
     // 일치하는 아이디가 없으면 경고 메시지 출력
     document.getElementById("show_id").innerText = "등록된 아이디가 없습니다.";
+    document.getElementById("show_id").style.color = "#FF0000";
   }
 });

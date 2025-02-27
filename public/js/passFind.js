@@ -19,9 +19,11 @@ document.getElementById("submitBtn").addEventListener("click", function (e) {
     document.getElementById(
       "show_password"
     ).innerText = `비밀번호: ${user.pass}`;
+    document.getElementById("show_password").style.color = "#808080";
   } else {
     // 일치하는 비밀번호가 없으면 경고 메시지 출력
     document.getElementById("show_password").innerText =
       "등록된 아이디가 없습니다.";
+    document.getElementById("show_password").style.color = "#FF0000";
   }
 });

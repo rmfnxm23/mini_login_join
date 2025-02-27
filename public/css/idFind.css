@@ -71,7 +71,7 @@ button:hover {
   text-align: center;
   margin-top: 20px;
   font-size: 18px;
-  color: #333;
+  font-weight: 500;
   margin-bottom: 20px; /* 아래쪽 간격 */
 }
 
