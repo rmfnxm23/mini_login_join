@@ -35,31 +35,32 @@
 
 ## 화면 구성 및 주요 기능 📺
 
-<div>
-<div>
-    <h4>1. 회원가입</h4>
-    <div>- ID, 비밀번호 중복확인</div>
-    <div>- 조건에 적합할 경우 회원가입 버튼 활성화</div>
-    <div>- 로컬 스토리지에 저장</div>
+1. ####  회원가입 ####
+- ID, 비밀번호 중복확인
+- 조건에 적합할 경우 회원가입 버튼 활성화
+- 로컬 스토리지에 저장
 </br>
+<img src="https://github.com/user-attachments/assets/288e894f-9f77-465f-8a79-3a7afe7a8eb9" width="600" height="400" />
+
+
     
-</div>
-<div>
-    <h4>2. 로그인</h4>
-    <div>- 로컬스토리지에 저장된 ID와 비밀번호를 비교하여 등록된 회원인지 확인</div>
+ 2. #### 로그인 ####
+- 로컬스토리지에 저장된 ID와 비밀번호를 비교하여 등록된 회원인지 확인
 </br>
-    
-</div>
-<div>
-    <h4>3. 아이디 찾기</h4>
-    <div>- 로컬스토리지에 저장된 휴대폰 번호를 비교하여 일치하는 ID 찾기</div>
+<img src="https://github.com/user-attachments/assets/e806903a-33ae-49ca-a6d1-3a7f798eb7b9" width="600" height="400" />
+
+
+
+3. #### 아이디 찾기 ####
+- 로컬스토리지에 저장된 휴대폰 번호를 비교하여 일치하는 ID 찾기
 </br>
-    
-</div>
-  <div>
-    <h4>4. 비밀번호 찾기</h4>
-    <div>- 로컬스토리지에 저장된 ID를 비교하여 일치하는 비밀번호 찾기</div>
+<img src="https://github.com/user-attachments/assets/82694696-74db-49ae-8976-1714d074bac8" width="300" height="200" />
+<img src="https://github.com/user-attachments/assets/d0a4b5e2-5ed5-4d79-8ea0-1046a025e4a1" width="300" height="200" />
+
+
+
+ 4. #### 비밀번호 찾기 ####
+- 로컬스토리지에 저장된 ID를 비교하여 일치하는 비밀번호 찾기
 </br>
-    
-</div>
-</div>
+<img src="https://github.com/user-attachments/assets/05a7dedd-06af-4212-8d5a-a71fa30f180f" width="300" height="200" />
+<img src="https://github.com/user-attachments/assets/52f6c685-ad06-4dcc-a26c-867308509c54" width="300" height="200" />
